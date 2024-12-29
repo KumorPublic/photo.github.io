@@ -1,0 +1,658 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="岁稔年丰，风月无边, 编程,摄影,日志,客栈,童话镇">
+    <meta name="description" content="kumor的摄影客栈">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>岁稔年丰，风月无边 | Kumor Tavern</title>
+    <link rel="icon" type="image/png" href="/medias/favicon.webp">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/js/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+
+<body>
+    <!-- 网站全局深色模式设置开始 -->
+    <script>
+        document.body.classList.add('dark');
+    </script>
+    <!-- 网站全局深色模式设置结束 -->
+
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.webp" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Kumor Tavern</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/./" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.webp" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Kumor Tavern</div>
+        <div class="logo-desc">
+            
+            kumor的摄影客栈
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/./" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    <!-- 加密功能 /libs/cryptojs/crypto-js.min.js-->
+
+    <script src="/libs/cryptojs/crypto-js.min.js"></script>
+    <script>
+        (function() {
+            let pwd = '';
+
+            if (pwd && pwd.length > 0) {
+                if (pwd !== CryptoJS.SHA256(prompt('请输入密码才可访问哒~')).toString(CryptoJS.enc.Hex)) {
+                    alert('密码错误哦，将返回相册页面哦~');
+                    location.href = '/gallery';
+                }
+            }
+        })();
+    </script>
+
+
+<!-- <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                時間の記憶
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="/libs/typed/js/typed.min.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['ᛗᛃ᛫ᚠᚫᛁᚱᛇ᛫ᛏᚫᛚᛖ᛫ᛏᛟᚹᚾ','わたしのおとぎ話の街'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        // 随机切换 banner 图. 
+        var bannerID = Math.floor(Math.random() * 44) + 1;
+        var bannerUrl = "/medias/banner/" + bannerID + '.webp';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    </script>
+    
+
+    </div>
+</div> -->
+
+<!-- <link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css">-->
+<!-- 该主题自带的lightGallery.js在图片多的时候会很卡，所以弃用，使用了一个我在网上找的baguetteBox，很轻量级，就是功能少了点 -->
+<!--<script src=""></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css"> -->
+<!-- <script src="/libs/lightGallery/js/lightgallery.min.js"></script> -->
+<!-- <script src="/libs/jquery/js/jquery.min.js"></script>  -->
+
+<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/libs/jquery/css/justifiedGallery.min.css">
+<script src="/libs/jquery/js/jquery.min.js"></script> 
+<script src="/libs/jquery/js/jquery.justifiedGallery.min.js"></script>
+<!-- 
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery-core.min.css">
+ -->
+
+ <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css"> 
+<!--  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+ -->
+<script src="/libs/lightGallery/js/lightgallery.min.js"></script>
+
+<!--  缩放插件和缩略图插件，用不到 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+ -->
+
+<style>
+    .miaoshus .title {
+        font-family: MV Boli;
+    }
+
+    .miaoshus {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 75%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+        font-size: 16px;
+        margin: 24px auto 12px;
+
+    }
+
+    body.dark .miaoshus {
+        background: 0 0;
+        border: 1px dashed #888;
+    }
+
+    /** Below CSS is completely optional **/
+    .gallery-item {
+        width: 200px;
+        padding: 5px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .justify-content-center {
+            width: 80%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .justify-content-center {
+            width: 85%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    @media screen and (min-width: 1580px) {
+        .justify-content-center {
+            width: 90%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+</style>
+
+<div class="tag-title center-align">
+    <div class="miaoshus">
+        <div class="title center-align">
+            “ 
+                岁稔年丰，风月无边
+              ”
+        </div>
+        “ 这里有光影流年，还有两朵穿衣裳的云。”
+    </div>
+</div>
+
+<!-- 相册 -->
+<div class="container-sm">
+    <div class="row justify-content-center">
+        <div class="col col-md-10">
+            <div class="gallery-container" id="animated-thumbnails-gallery">
+            
+                
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/09bc9430bd3aabee.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_09bc9430bd3aabee.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/10f3fb88954fb32f.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_10f3fb88954fb32f.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/1576a16ce7c4a43e.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_1576a16ce7c4a43e.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/20c078fb179f99cb.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_20c078fb179f99cb.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/29b7856aab10fff5.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_29b7856aab10fff5.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/307cb23d5801d581.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_307cb23d5801d581.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/371f3a33fb375b50.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_371f3a33fb375b50.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/3cc5ddef21bebbc7.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_3cc5ddef21bebbc7.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/4316341abe2e41b5.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_4316341abe2e41b5.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/503e37d4ed142229.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_503e37d4ed142229.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/512725820af80bb6.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_512725820af80bb6.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/53a5de4cb0e98bca.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_53a5de4cb0e98bca.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/5965ccc65ee647e5.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_5965ccc65ee647e5.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/59b0726b443c74d9.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_59b0726b443c74d9.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/59e3e76db3717667.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_59e3e76db3717667.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/5b98bc0d6433f522.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_5b98bc0d6433f522.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/6786e1018054743c.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_6786e1018054743c.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/6b880d74d888d780.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_6b880d74d888d780.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/6ee5e577f4eabdd0.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_6ee5e577f4eabdd0.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/721409ce568e115d.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_721409ce568e115d.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/80621a0da8c44649.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_80621a0da8c44649.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/8ccee21318adad61.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_8ccee21318adad61.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/8fdcadde3bfb6d87.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_8fdcadde3bfb6d87.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/9d527024a139708a.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_9d527024a139708a.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/b7b7a606ef2cf2e8.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_b7b7a606ef2cf2e8.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/bd5381980d9f1951.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_bd5381980d9f1951.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/c0dbda32f6cff3ad.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_c0dbda32f6cff3ad.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/ce08d8ffd32c9506.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_ce08d8ffd32c9506.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/cff151db6890a64d.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_cff151db6890a64d.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/dea0c4d36f07c5bb.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_dea0c4d36f07c5bb.webp" />
+                        </a>
+                
+                                       
+                        
+                        <a class="gallery-item"
+                            data-src="images/f2f82edebb80fa5b.webp" data-sub-html="岁稔年丰，风月无边">
+                            <img class="img-responsive" src="images/thumb/t_f2f82edebb80fa5b.webp" />
+                        </a>
+                
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        jQuery("#animated-thumbnails-gallery")
+            .justifiedGallery({
+                //首选行高（以像素为单位）。
+                rowHeight: 300,
+                //此选项可以是假值或负值以使其保持禁用状态。可以是一个数字（例如200），指定最大行高（以像素为单位）。或者，指定百分比的字符串（例如“200%”表示行高不能超过2 * rowHeight）。请注意，如果图像需要更高才能合理，则使用此选项可以裁剪图像。
+                maxRowHeight: '150%', 
+                //此参数限制要显示的行数。Justified Gallery 会隐藏不需要的行，并且如果调整页面大小，则会显示更多（或更少）图像。 请注意，此选项不会通过缩小图像来限制行数。 值 0 表示禁用。
+                maxRowsCount: 0, 
+                //描述每个尺寸范围的后缀。默认情况下不搜索其他缩略图。要与Flickr 的后缀 一致， 您应该按以下方式更改它：{'lt100':'_t','lt240':'_m','lt320':'_n','lt500':'','lt640':'_z','lt1024':'_b'}
+                sizeRangeSuffixes: {},
+                thumbnailPath: undefined,
+                //决定是否对齐最后一行（使用'justify'）或不对齐（使用'nojustify'），或者如果无法对齐则隐藏该行（使用'hide'）。默认情况下，使用 时'nojustify'，最后一行图像左对齐，但也可以居中对齐（使用'center'）或右对齐（使用'right'）。
+                lastRow: "justify",
+                //决定是否要显示鼠标悬停在图像上时出现的标题。
+                captions: true,
+                //确定图像之间的边距
+                margins: 5,
+                //确定画廊的边框尺寸。如果值为负，则边框将与边距相同。
+                border: -1,
+                //如果缩略图中存在宽度和高度属性，则会立即构建布局，并且缩略图在加载时将随机出现。
+                waitThumbnailsLoad: true,
+                //自动随机或不随机照片的顺序。
+                randomize: false,
+                //用于确定在给定图库条目的情况下如何检索缩略图。
+                imgSelector: '> img, > a > img',
+                //使用或不使用 CSS 动画。使用 CSS 动画，可以通过覆盖 Justified Gallery 定义的规则来更轻松地更改它们。
+                cssAnimation: true
+            })
+            .on("jg.complete", function () {
+                window.lightGallery(
+                    document.getElementById("animated-thumbnails-gallery"),
+                    {
+                        //启用下载按钮。默认情况下，下载 URL 将从 data-src/href 属性中获取，但它仅支持现代浏览器。如果您愿意，可以通过 data-download-url 提供另一个下载网址。如果您想隐藏特定幻灯片的下载按钮，请在 data-download-url 中传递 false。
+                        download: false,
+                        //easing: "ease",
+                        //图像之间的过渡类型。
+                        mode: "lg-slide",
+                        //能够通过鼠标滚轮导航到下一张/上一张幻灯片
+                        mousewheel: true,
+                        //预载滑块数量仅在当前幻灯片完全加载后才会执行。例如，如果您单击第四张图像，并且预加载 = 1，则在第四张幻灯片完全加载后，将在后台加载第三张幻灯片和第五张幻灯片。如果预加载为 2，则将预加载第二张、第三张、第五张、第六张幻灯片。
+                        preload: 2,
+                        //lgZoom, lgThumbnail
+                        plugins: [],
+                        mobileSettings: {
+                            controls: false,
+                            showCloseIcon: false,
+                            download: false,
+                            rotate: false
+                        }
+                    }
+                );
+            });
+</script>
+
+<!-- 
+    在所有页面加入音乐播放组件
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    
+</footer>
+-->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
